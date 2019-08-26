@@ -15,6 +15,7 @@ body {
   line-height: 1.6;
 }
 
+
 h1, h2, h3 {
   font-weight: 300;
 }
@@ -85,11 +86,11 @@ h1, h2, h3 {
 }
 
 .bottom-container ul li i {
+  color: #E8433A;
   float: right;
 }
 
 .bottom-container ul li i:hover {
-  color: #E8433A;
   cursor: pointer;
 }
 
