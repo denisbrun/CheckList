@@ -97,3 +97,16 @@ h1, h2, h3 {
 .bottom-container ul li:hover {
   background: #f4f4f4;
 }
+
+.bottom-container input[type=submit] {
+  text-decoration: none;
+  display: inline-block;
+  background: #E8433A;
+  color: #fff;
+  padding: .5rem 2rem;
+  border-radius: 3px;
+  margin-top: 2rem;
+  border: none;
+  box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+}

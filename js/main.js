@@ -1,6 +1,7 @@
 const newTask = document.getElementById("newTask");
-const addTaskButton = document.getElementById("addTask");
+const addTaskButton = document.getElementById("addTaskButton");
 const taskList = document.querySelector("ul");
+const clearListButton = document.getElementById("clearListButton");
 
 
 // Load all Event listeners
@@ -13,7 +14,10 @@ function loadEventListeners() {
   addTaskButton.addEventListener('click', addTask);
 
   // Remove task event
-  document.body.addEventListener('click', removeTask)
+  document.body.addEventListener('click', removeTask);
+
+  // clear Task list
+  clearListButton.addEventListener('click', clearTaskList);
     
 }
 
@@ -38,12 +42,15 @@ function addTask() {
       taskList.appendChild(li);
       newTask.value='';
     }
-}
+};
 
 function removeTask(e) {
   if (e.target.classList.contains('delete-item')) {
     e.target.parentElement.remove();
-
   }
+};
 
-}
+
+function clearTaskList(e) {
+  taskList.innerHTML = '';
+};
