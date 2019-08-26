@@ -25,10 +25,19 @@ function loadEventListeners() {
   clearListButton.addEventListener('click', clearTaskList);
 
   // Filter Tasks
-  filterTask.addEventListener('keyup', filterTasks)
+  filterTask.addEventListener('keyup', filterTasks);
+
+  // ENTER task
+  newTask.addEventListener('keydown', enterTask);
     
 }
 
+
+function enterTask(e){
+  if(e.keyCode == 13 ){
+    addTask();
+  }
+}
 
 function addTask() {
     if(newTask.value === ''){
